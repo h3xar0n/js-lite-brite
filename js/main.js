@@ -24,7 +24,14 @@ var main = function() {
   
   $('.box').on('click',
     function() {
-      $(this).addClass(colorClass);
+      $(this).toggleClass(colorClass);
+  });
+
+  $('.toggle-blink').on('click', 
+    function() {
+      if (colorClass) {
+        $('.toggle-blink').toggleClass('opacity');
+      }
   });
 }
 
