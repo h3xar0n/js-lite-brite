@@ -5,6 +5,7 @@ var main = function() {
   $('select-color').on('click', 
     function () {
       var selectedColor = $(this).attr('class');
+
       switch (selectedColor) {
         case 'select-color magenta not-selected':
           colorClass = 'magenta';
@@ -16,7 +17,9 @@ var main = function() {
           colorClass = 'yellow';
         break;
       }
+
       $(this).removeClass('not-selected');
+      $(this).siblings().addClass('not-selected');
   });
 };
 
