@@ -32,6 +32,9 @@ var main = function() {
       if (colorClass) {
         $('.toggle-blink').toggleClass('opacity');
       }
+      setInterval(function() {
+        $('.box.cyan, .box.yellow, .box.magenta').toggleClass('blink');
+      }, 350);
   });
 }
 
