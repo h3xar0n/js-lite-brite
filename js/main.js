@@ -16,6 +16,7 @@ var main = function() {
           colorClass = 'yellow';
         break;
       }
+      $(this).removeClass('not-selected');
   });
 };
 
