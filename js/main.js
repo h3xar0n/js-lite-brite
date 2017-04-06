@@ -1,4 +1,7 @@
 var main = function() {
+
+  var colorClass = '';
+  
   $('select-color').on('click', 
     function () {
       var selectedColor = $(this).attr('class');
