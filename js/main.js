@@ -1,5 +1,8 @@
 var main = function() {
-  // all code
+  $('select-color').on('click', 
+    function () {
+      
+  });
 };
 
 ($document).ready(main);
