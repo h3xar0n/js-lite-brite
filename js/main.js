@@ -21,6 +21,11 @@ var main = function() {
       $(this).removeClass('not-selected');
       $(this).siblings().addClass('not-selected');
   });
+
+  $('.box').on('click',
+    function() {
+    
+  });
 };
 
 ($document).ready(main);
